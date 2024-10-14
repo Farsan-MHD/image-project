@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(65, 61, 61);
+}
+
+#main{
+    padding:0 0 30px 0;
+}
+
+/* logo style start */
+
+#logo-countainer{
+    display:none;
+}
+
+/* logo style end */
+/* header style start */
+
+h1{
+    font-size:2rem;
+    color:whitesmoke;
+    margin:20px auto;
+    text-align:center;
+    text-shadow: 5px 3px rgb(0,0,0,0.5);
+}
+
+/* header style end */
+/* image section steylr start */
+
+#image-section{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.image-div{
+    width:300px;
+    height:400px;
+    position:relative;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+}
+
+.link{
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+.image{
+    width:100%;
+    height:90%;
+    border-radius: 5px;
+}
+
+
+.pera{
+    text-align: center;
+    font-size:1.5rem;
+    border-radius: 5px;
+}
+
+/* image section style end */
+
+@media (min-width:650px){
+
+    /* logo style start */
+
+    #logo-countainer{
+        display:block;
+        width:130px;
+        height:65px;
+        background-color: transparent;
+        position: absolute;
+        top:10px;
+        left:10px;
+    }
+    
+    .boxes{
+        width:65px;
+        height:65px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:5px;
+    }
+    
+    .box{
+        width:30px;
+        height:30px;
+    }
+    
+    .box-1{
+        border-radius: 0 5px;
+        background-color: rgb(20, 20, 206);
+    }
+    
+    .box-2{
+        border-radius: 5px 0;
+        background-color: rgb(250, 250, 10);
+    }
+    
+    .box-3{
+        
+        border-radius: 5px 0;
+        background-color: rgb(228, 60, 8);
+    }
+    
+    .text-box{
+        color: aqua;
+        text-shadow: 1px 1px black;
+        font-weight:600;
+        font-size:12px;
+        font-family:sans-serif ,'Times New Roman', Times, serif;
+        position:relative;
+        left:35px;
+        bottom:23px;
+    }
+
+     /* nlogo style end */
+
+    h1{
+        font-size: 3.5rem;
+        margin: 60px 0 20px 0;
+    }
+
+    #image-section{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        padding-top:20px;
+    }
+
+    .image{
+        width:100%;
+        height:100%;
+    }
+
+.pera{
+    width:100%;
+    height:100%;
+    font-size:2rem;
+    color:whitesmoke;
+    top:0;
+    left:0;
+    position:absolute;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.pera:hover{
+    opacity: 1;
+}
+
+}
+
+@media (min-width:900px){
+    #image-section{
+        gap:50px;
+    }
+}
