@@ -30,9 +30,13 @@ h1{
 }
 
 /* header style end */
+hr{
+    margin:20px auto;
+}
 /* image section steylr start */
 
 #image-section{
+    padding-top:30px;
     display:flex;
     flex-direction: column;
     justify-content: center;
